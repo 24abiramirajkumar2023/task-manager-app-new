@@ -1,0 +1,66 @@
+.dashboard {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.task-box {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+body {
+  margin: 0;
+  font-family: Arial;
+   background-color: #f4f4f4;
+}
+
+
+nav {
+  background-color: black;
+  color: white;
+  padding: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+.form-container {
+  width: 300px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+form button {
+  margin-top: 20px;
+}
