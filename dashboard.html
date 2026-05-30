@@ -1,29 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <nav>
+    <h1>Task Manager</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+    </ul>
+  </nav>
 
-  <div class="dashboard">
-
-    <h1>My Tasks</h1>
-
-    <div class="task-box">
-      <h3>Complete HTML Project</h3>
-      <p>Status: Pending</p>
+  <main class="dashboard">
+    <div class="dashboard-header">
+      <div>
+        <h1>My Tasks</h1>
+        <p>Keep track of your tasks and update their status as you work.</p>
+      </div>
     </div>
 
-    <div class="task-box">
-      <h3>Study CSS Flexbox</h3>
-      <p>Status: Completed</p>
+    <div class="task-list" id="task-list">
+      <div class="task-box">
+        <h3>Complete HTML Project</h3>
+        <p>Status: <strong>Pending</strong></p>
+      </div>
+      <div class="task-box completed">
+        <h3>Study CSS Flexbox</h3>
+        <p>Status: <strong>Completed</strong></p>
+      </div>
     </div>
 
-  </div>
+    <section class="task-form-card">
+      <h2>Add a New Task</h2>
+      <form id="new-task-form">
+        <input type="text" id="task-name" placeholder="Task title" required>
+        <select id="task-status">
+          <option value="Pending">Pending</option>
+          <option value="Completed">Completed</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+  </main>
 
+  <script src="script.js"></script>
 </body>
 
 </html>

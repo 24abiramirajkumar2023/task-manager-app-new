@@ -3,24 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title> 
-  
+  <title>Login</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
+  <nav>
+    <h1>Task Manager</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html" class="active">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+  </nav>
 
-  <form>
-
-    <h1>Login</h1>
-
-    <input type="email" placeholder="Enter Email">
-
-    <input type="password" placeholder="Enter Password">
-
-    <button>Login</button>
-
-  </form>
-
+  <main class="form-page">
+    <form action="#" method="post" class="form-card">
+      <h1>Login</h1>
+      <input type="email" placeholder="Enter Email" required>
+      <input type="password" placeholder="Enter Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </main>
 </body>
 </html>

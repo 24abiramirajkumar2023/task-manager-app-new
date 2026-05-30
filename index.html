@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task Manager</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
   <nav>
     <h1>Task Manager</h1>
-
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="login.html">Login</a></li>
@@ -18,25 +18,22 @@
       <li><a href="dashboard.html">Dashboard</a></li>
     </ul>
   </nav>
-       <section class="hero">
-    <h2>Manage Your Daily Tasks Easily</h2>
-    <p>Simple Task Manager using HTML and CSS</p>
 
-    <a href="login.html">
-        <button>Login</button>
-    </a>
-
-<a href="register.html">
-    <button>Register</button>
-</a>
-
-</section>
-
-
-    <p>Track your work and stay organized.</p>
-
-    <button>Get Started</button>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Manage Your Daily Tasks Easily</h2>
+      <p>Simple task manager built using HTML, CSS, and JavaScript.</p>
+      <div class="hero-actions">
+        <a class="button" href="login.html">Login</a>
+        <a class="button button-secondary" href="register.html">Register</a>
+      </div>
+    </div>
   </section>
 
+  <section class="overview">
+    <p>Track your work and stay organized with a clean dashboard.</p>
+    <a class="button" href="dashboard.html">Get Started</a>
+  </section>
 </body>
+
 </html>
