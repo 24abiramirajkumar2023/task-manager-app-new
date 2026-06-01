@@ -1,3 +1,4 @@
+// Task Manager Functionality
 document.addEventListener('DOMContentLoaded', function () {
   const taskForm = document.getElementById('new-task-form');
   const taskList = document.getElementById('task-list');
@@ -40,3 +41,64 @@ document.addEventListener('DOMContentLoaded', function () {
     taskStatusInput.value = 'Pending';
   });
 });
+// Fetch API - Load Tasks
+const loadButton = document.getElementById("loadTasks");
+const apiTaskList = document.getElementById("taskList");
+
+if (loadButton && apiTaskList) {
+
+    loadButton.addEventListener("click", () => {
+
+        fetch("https://jsonplaceholder.typicode.com/todos?_limit=5")
+            .then(response => response.json())
+            .then(data => {
+
+                apiTaskList.innerHTML = "";
+
+                data.forEach(task => {
+
+                    const li = document.createElement("li");
+                    li.textContent = task.title;
+
+                    apiTaskList.appendChild(li);
+
+                });
+
+            })
+            .catch(error => {
+                console.log(error);
+            });
+
+    });
+
+}
+// Register Form Validation
+const registerForm = document.getElementById("registerForm");
+
+if (registerForm) {
+
+    registerForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const errorMessage = document.getElementById("errorMessage");
+
+        if (name === "" || email === "" || password === "") {
+            errorMessage.textContent = "All fields are required";
+            return;
+        }
+
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+        if (!email.match(emailPattern)) {
+            errorMessage.textContent = "Invalid email format";
+            return;
+        }
+
+        errorMessage.textContent = "Registration Successful!";
+    });
+
+}
