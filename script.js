@@ -1,4 +1,7 @@
+// ----------------------
 // Task Manager Functionality
+// ----------------------
+document.addEventListener('DOMContentLoaded', function () {}
 document.addEventListener('DOMContentLoaded', function () {
   const taskForm = document.getElementById('new-task-form');
   const taskList = document.getElementById('task-list');
@@ -41,10 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
     taskStatusInput.value = 'Pending';
   });
 });
+// ----------------------
 // Fetch API - Load Tasks
-const loadButton = document.getElementById("loadTasks");
-const apiTaskList = document.getElementById("taskList");
-
+// ----------------------
+const loadButton = document.getElementById("loadDataBtn");
+const loadButton = document.getElementById("loadDataBtn");
+const apiTaskList = document.getElementById("api-data");
 if (loadButton && apiTaskList) {
 
     loadButton.addEventListener("click", () => {
@@ -72,7 +77,10 @@ if (loadButton && apiTaskList) {
     });
 
 }
+// ----------------------
 // Register Form Validation
+// ----------------------
+const registerForm = document.getElementById("registerForm");
 const registerForm = document.getElementById("registerForm");
 
 if (registerForm) {
