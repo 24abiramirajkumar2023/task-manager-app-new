@@ -2,46 +2,51 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task Manager</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h2>Tasks</h2>
 
-<button id="loadTasks">
-    Load Tasks
-</button>
+    <h2>Tasks</h2>
 
-<ul id="taskList"></ul>
+    <button onclick="loadTasks()">
+        Load Tasks
+    </button>
 
-  <nav>
-    <h1>Task Manager</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="register.html">Register</a></li>
-      <li><a href="dashboard.html">Dashboard</a></li>
-    </ul>
-  </nav>
+    <ul id="taskList"></ul>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Manage Your Daily Tasks Easily</h2>
-      <p>Simple task manager built using HTML, CSS, and JavaScript.</p>
-      <div class="hero-actions">
-        <a class="button" href="login.html">Login</a>
-        <a class="button button-secondary" href="register.html">Register</a>
-      </div>
-    </div>
-  </section>
+    <nav>
+        <h1>Task Manager</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
 
-  <section class="overview">
-    <p>Track your work and stay organized with a clean dashboard.</p>
-    <a class="button" href="dashboard.html">Get Started</a>
-  </section>
-  <script src="script.js"></script>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Manage Your Daily Tasks Easily</h2>
+            <p>Simple task manager built using HTML, CSS, and JavaScript.</p>
+
+            <div class="hero-actions">
+                <a class="button" href="login.html">Login</a>
+                <a class="button button-secondary" href="register.html">Register</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="overview">
+        <p>Track your work and stay organized with a clean dashboard.</p>
+        <a class="button" href="dashboard.html">Get Started</a>
+    </section>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
