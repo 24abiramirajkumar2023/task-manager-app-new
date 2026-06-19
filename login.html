@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <nav>
     <h1>Task Manager</h1>
     <ul>
@@ -18,12 +19,30 @@
   </nav>
 
   <main class="form-page">
-    <form action="#" method="post" class="form-card">
+    <form id="loginForm" class="form-card">
       <h1>Login</h1>
-      <input type="email" placeholder="Enter Email" required>
-      <input type="password" placeholder="Enter Password" required>
+
+      <input
+        type="email"
+        id="loginEmail"
+        placeholder="Enter Email"
+        required
+      >
+
+      <input
+        type="password"
+        id="loginPassword"
+        placeholder="Enter Password"
+        required
+      >
+
+      <p id="loginMessage"></p>
+
       <button type="submit">Login</button>
     </form>
   </main>
+
+  <script src="script.js"></script>
+
 </body>
 </html>

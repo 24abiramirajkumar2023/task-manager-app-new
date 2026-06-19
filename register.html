@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
   <nav>
     <h1>Task Manager</h1>
     <ul>
@@ -20,17 +19,37 @@
   </nav>
 
   <main class="form-page">
-    <form id="registerForm" action="#" method="post" class="form-card">
+    <form id="registerForm" class="form-card">
       <h1>Register</h1>
-      <input id="name" type="text" placeholder="Enter Name" required>
 
-      <input id="email" type="email" placeholder="Enter Email" required>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter Name"
+        required
+      >
 
-      <input id="password" type="password" placeholder="Enter Password" required>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter Email"
+        required
+      >
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+        required
+      >
+
       <p id="errorMessage"></p>
+
       <button type="submit">Register</button>
     </form>
   </main>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
